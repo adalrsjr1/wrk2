@@ -20,3 +20,4 @@ RUN apk --no-cache add --update \
     openssl
 
 COPY --from=0 /wrk2/wrk /usr/bin
+COPY --from=0 /wrk2/scripts /scripts
